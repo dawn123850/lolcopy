@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-10-24 13:51:05
+ * @version $Id$
+ */
+body,html{height: 100%;width:100%;margin: 0px;padding: 0px;}
+ul,li,a{list-style: none;}
+a {
+    color: #2ba6cb;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+}
+p,a,h1,h2,h3{margin: 0;padding: 0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+.bg-video{
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	background-color: #000;
+}
+.nav-bar{
+	position: fixed;
+	left: 5px;
+	top: 50%;
+	margin-top:-50px;
+	color: #bbb;
+	font-size: 14px;
+	font-family: "Microsoft YaHei", cursive;
+}
+.nav-bar li{
+	height: 40px;
+	line-height: 40px;
+}
+header{width: 100%;height: 7vh;background-color: #fff;}
+.h-logo{float: left;margin-left: 20%;}
+.h-text{font-size: 12px;font-family: "Microsoft YaHei", cursive;margin-left: 120px;float: left;line-height: 7vh;}
+.p1,.p2,.p3,.p4{	
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	
+    text-align: center;
+    margin: 25vh auto;
+    font-family: "Microsoft YaHei", cursive;
+}
+h2{
+
+	font-size: 34px;
+    font-family: "Microsoft YaHei", cursive;
+    font-weight: 600;
+    line-height: 1.5em;
+
+}
+.p1 h1{
+	font-size: 96px;
+	font-family: "Microsoft YaHei", cursive;
+}
+.swish{margin-top: 20px;}
+p{
+	font-size: 24px;
+    line-height: 36px;
+    font-family: "Microsoft YaHei", serif;
+}
+.p1 a{
+	color: #fff;
+	font-family: "Microsoft YaHei", serif;
+	font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px 30px;
+}
+.p1 a:hover{
+	color: #2ba6cb;
+}
+.p2 .bg{
+	margin: 0 auto;
+	width: 1000px;
+	height: 550px;
+	background: url("bg-p2.jpg");
+	text-align: left;
+}
+.p2 p{
+	font-size: 16px;
+	margin-top: 20px;
+	line-height: 24px;
+	max-width: 400px;
+	color: #bbb;
+}
+.p2 .text{
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 15px;
+}
+.p2 .icon{
+	 border: 1px solid rgba(255, 255, 255, 0.5);
+	 width: 80px;
+	 height: 80px;
+	 margin-top: 30px;
+	 margin-left: 20px;
+	 cursor: pointer;
+
+	 transform: rotate(45deg);
+	-ms-transform: rotate(45deg);		/* IE 9 */
+	-webkit-transform: rotate(45deg);	/* Safari and Chrome */
+	-o-transform: rotate(45deg);		/* Opera */
+	-moz-transform: rotate(45deg);		/* Firefox */
+}
+.p2 .icon:hover{
+	border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.p2 .play{
+	position: absolute;
+	margin-top: -54px;
+	margin-left: 50px;
+	cursor: pointer;
+	width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 15px solid transparent;
+}
+.p2 .play:hover{
+	border-top: 15px solid transparent;
+    border-left: 30px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 15px solid transparent;
+}
+.p3 p{
+	font-size: 18px;
+	line-height: 1.5em;
+	max-width: 468px;
+}
+.p3 .p3-box{
+	width:1000px; 
+	margin: 0 auto;
+	background: rgba(27, 27, 27, 0.8)
+}
+.p3 .left{
+	float: left;
+	width: 420px;
+	padding: 30px 50px 30px 30px;
+	color: #aaa;
+	text-align: left;
+}
+.p3 .right{
+	float: right;
+	width: 500px;
+}
+.p3 .right span{
+	position: absolute;
+	text-align: left;
+	margin-top: 255px;
+	padding-left: 15px;
+	color: #aaa;
+}
+.p4{width: 1000px;margin: 0 auto;}
+.p4 .p4-title::before{content:' '; 
+	display: inline-block; 
+	width: 75px;
+	height: 41px;
+	background: url("point-left.png") center center no-repeat ; 
+	margin-bottom: -10px;
+	margin-right: 5px;
+}
+.p4 .p4-title::after{
+	content:' '; 
+	display: inline-block; 
+	width: 75px;
+	height: 41px;
+	background: url("point-right.png") center center no-repeat ; 
+	margin-bottom: -10px;
+	margin-left: 5px;
+}
+.p4 .box{
+	width: 1000px;
+	height: 384px;
+	margin: 30px auto;
+	background-color: rgba(27, 27, 27, 0.8);
+}
+.box .right{
+	float: right;
+	width: 500px;
+}
+.box .left{
+	float: left;
+	text-align: left;
+	padding-left: 18px;
+vertical-align: middle;
+margin-top: 40px;
+
+}
+.box .left p{
+	opacity: 0.6;
+}
+.box .left i{
+	line-height: 1.6em;
+	display: block;
+	opacity: 0.6;
+}
+.box .left a{
+	background: url("newbut.png") center center no-repeat;
+    width: 228px;
+    height: 64px;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    margin: 10px 0 0 0;
+    color: #ff0000 !important;
+    font-size: 20px !important;
+}
+.box2 .left{
+	margin-top: 20px !important;
+}
+
+.filter{
+	 -webkit-filter:blur(5px);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+	<style type="text/css">
+	html,body{
+		height: 100%;
+	}
+.a,.b,.c{
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	background-color: pink;
+	margin-top: 50px;
+	animation: identifier 5s;
+-moz-animation: identifier 5s;	/* Firefox */
+-webkit-animation: identifier 5s;	/* Safari 和 Chrome */
+-o-animation: identifier 5s;	/* Opera */
+	transition-timing-function: ease-in;
+}
+
+@-webkit-keyframes identifier {
+	from {opacity: 0; }
+	to { opacity: 1;
+	background-color: blue; }
+}
+@-o-keyframes identifier {
+	from {opacity: 0; }
+	to { opacity: 1; }
+}
+@-moz-keyframes identifier {
+	from {opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes identifier {
+	from {opacity: 0; }
+	to { opacity: 1; }
+}
+
+	</style>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+
+
+</body>
+</html>
